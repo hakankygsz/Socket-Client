@@ -6,11 +6,11 @@ A lightweight and easy-to-use Socket.IO client wrapper with TypeScript support f
 
 ## Features
 
-- Easy connection management with Socket.IO Client  
-- Automatic logging of connection, error, and disconnect events  
-- Modular event handler structure  
-- Full TypeScript support  
-- Reconnection attempts and timeout settings  
+- Easy connection management with Socket.IO Client
+- Automatic logging of connection, error, and disconnect events
+- Modular event handler structure
+- Full TypeScript support
+- Reconnection attempts and timeout settings
 
 ---
 
@@ -24,26 +24,6 @@ or
 
 ```bash
 yarn add socket.io-client
-```
-
----
-
-## Project Structure
-
-```
-Socket-Client/
-├── src/
-│   ├── config/
-│   │   └── environment.config.ts       # Socket server URL and configurations
-│   ├── services/
-│   │   ├── Logger/                     # Logger services
-│   │   └── Socket/                     # Socket connection and event handler services
-│   ├── utils/                         # Utility functions
-│   └── index.ts                       # Entry point
-├── .env.development                   # Development environment variables
-├── .env.production                    # Production environment variables
-├── package.json
-└── tsconfig.json
 ```
 
 ---
@@ -99,7 +79,7 @@ Set the server URL and other configurations in `src/config/environment.config.ts
 
 ```ts
 export const SocketConfig = {
-  url: 'http://localhost:3000',  // Socket.IO server address
+  url: 'http://localhost:3000', // Socket.IO server address
 };
 ```
 
@@ -113,9 +93,9 @@ Connection and error events are logged via the `Logger` service, outputting info
 
 ## Development
 
-- `reconnectionAttempts`: Tries to reconnect 5 times if connection fails  
-- `timeout`: 5000ms timeout for connection requests  
-- `withCredentials`: Enabled for cookie sending in CORS  
+- `reconnectionAttempts`: Tries to reconnect 5 times if connection fails
+- `timeout`: 5000ms timeout for connection requests
+- `withCredentials`: Enabled for cookie sending in CORS
 
 ---
 
