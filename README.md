@@ -101,7 +101,7 @@ Connection and error events are logged via the `Logger` service, outputting info
 
 ## License
 
-MIT © Hakan Kaygusuz
+BSD 3-Clause License © Hakan Kaygusuz
 
 ---
 
